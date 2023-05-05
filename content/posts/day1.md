@@ -39,9 +39,9 @@ repost:
 
 博客（英语：Blog）是一种在线日记型式的个人网站，借由张帖子章、图片或视频来记录生活、抒发情感或分享信息。博客上的文章通常根据张贴时间，以倒序方式由新到旧排列。 
 
-[建站指南](https://fixit.lruihao.cn/zh-cn/documentation/getting-started/) 
+[建站指南](https://fixit.lruihao.cn/zh-cn/documentation/getting-started/)  
 [Markdown学习指南](https://mp.weixin.qq.com/s/qIptV_MEGjsUjw_zqvGn_A)  
-[Git bash tree for windows](https://gnuwin32.sourceforge.net/packages/tree.htm)
+[Git bash tree for windows](https://gnuwin32.sourceforge.net/packages/tree.htm)  
 
 `print('test')`
 ```
