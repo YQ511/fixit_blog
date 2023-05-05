@@ -1,0 +1,32 @@
+title = "My Hugo FixIt website"
+baseURL = "http://example.org/"
+defaultContentLanguage = "zh-cn"
+languageCode = "zh-CN"
+hasCJKLanguage = true
+
+theme = "FixIt"
+
+[params]
+  version = "0.2.X"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Papper"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    identifier = "categories"
+    name = "classfication"
+    url = "/categories/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    name = "label"
+    url = "/tags/"
+    weight = 3
+
+[markup]
+  [markup.highlight]
+    noClasses = false
