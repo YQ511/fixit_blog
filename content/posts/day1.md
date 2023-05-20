@@ -42,11 +42,11 @@ repost:
 [建站指南](https://fixit.lruihao.cn/zh-cn/documentation/getting-started/)  
 [Markdown学习指南](https://mp.weixin.qq.com/s/qIptV_MEGjsUjw_zqvGn_A)  
 [Git bash tree for windows](https://gnuwin32.sourceforge.net/packages/tree.htm) 
-#pip install --upgrade setuptools && python -m pip install --upgrade pip
-#pip3 install -i https://pypi.douban.com/simple --trusted-host pypi.douban.com pandas
 #今天是星期五明天舅他娘的周六了
 
 `print('test')`
+`pip install --upgrade setuptools && python -m pip install --upgrade pip`
+`pip3 install -i https://pypi.douban.com/simple --trusted-host pypi.douban.com pandas`
 ```
 #test code module
 ```
