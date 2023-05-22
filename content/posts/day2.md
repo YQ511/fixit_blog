@@ -1,5 +1,5 @@
 ---
-title: Day1：
+title: 记录文献：
 subtitle:
 date: 2023-05-04T16:25:50+08:00
 draft: false
@@ -37,15 +37,5 @@ repost:
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---
 
-博客（英语：Blog）是一种在线日记型式的个人网站，借由张帖子章、图片或视频来记录生活、抒发情感或分享信息。博客上的文章通常根据张贴时间，以倒序方式由新到旧排列。 
+[水稻重测序RIL遗传连锁图谱](https://kns.cnki.net/KXReader/Detail?invoice=vfBE1dYwYjwry6nhO%2FC%2BaxgNCxNZNntNsEQ19G%2FmrdgBy6BPgv7iEUCDpPmef5H9fGlwEfreC4V3pgE%2Ff4sWQLlSEwDNTs1MhEy79zHawY4%2B55dBhO%2FUnxs2QD%2BEpe%2FE7O9wRG%2BjFFmCKcQdGkjoFOSbasnAHQ5AqWpzmdtrn0s%3D&DBCODE=CJFD&FileName=HNNB202102006&TABLEName=cjfdlast2021&nonce=C08CB9E997DB466EAB0C0309B24B0D81&TIMESTAMP=1684728061193&uid=)  
 
-[建站指南](https://fixit.lruihao.cn/zh-cn/documentation/getting-started/)  
-[Markdown学习指南](https://mp.weixin.qq.com/s/qIptV_MEGjsUjw_zqvGn_A)  
-[Git bash tree for windows](https://gnuwin32.sourceforge.net/packages/tree.htm) 
-#今天是星期五明天舅他娘的周六了
-
-`print('test')`  
-```
-pip install --upgrade setuptools && python -m pip install --upgrade pip  
-pip3 install -i https://pypi.douban.com/simple --trusted-host pypi.douban.com pandas
-```
