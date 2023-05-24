@@ -1,12 +1,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Tags - 标签 - My Hugo FixIt website</title>
+    <title>Tags - 标签 - 我的 Hugo FixIt 网站</title>
     <link>http://example.org/tags/</link>
-    <description>Tags - 标签 - My Hugo FixIt website</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 04 May 2023 16:25:50 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+    <description>Tags - 标签 - 我的 Hugo FixIt 网站</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 24 May 2023 09:58:31 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
   <title>draft</title>
   <link>http://example.org/tags/draft/</link>
-  <pubDate>Thu, 04 May 2023 16:25:50 &#43;0800</pubDate>
+  <pubDate>Wed, 24 May 2023 09:58:31 &#43;0800</pubDate>
   <author>作者</author>
   <guid>http://example.org/tags/draft/</guid>
   <description><![CDATA[]]></description>
