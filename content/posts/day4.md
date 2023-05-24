@@ -28,7 +28,7 @@ resources:
 toc: true
 math: false
 lightgallery: false
-password: insermind
+password: 
 message:
 repost:
   enable: true
