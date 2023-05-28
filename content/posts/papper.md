@@ -1,7 +1,7 @@
 ---
-title: NCBI上传原始数据
+title: Papper
 subtitle:
-date: 2023-05-24T22:12:49+08:00
+date: 2023-05-27T08:50:52+08:00
 draft: false
 author:
   name:
@@ -36,6 +36,7 @@ repost:
 
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---
-[知乎：NCBI上传原始数据](https://zhuanlan.zhihu.com/p/149557150)  
-[知乎：NCBI数据库上传步骤](https://zhuanlan.zhihu.com/p/371729245)  
-[硕博之路](https://www.shuobolife.com)
+### 毕业小论文
+- [ ] 挑选材料进行商品种分析，基于重测序情况来写, 重测序，2K，mSNP 比较
+- [ ] 遗传选择用mSNP做一下
+- [ ] 改徐老师佳作
