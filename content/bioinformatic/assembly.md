@@ -1,10 +1,9 @@
 ---
-title: Papper
-subtitle:
-date: 2023-05-27T08:50:52+08:00
+title: "基因组组装"
+date: 2023-05-30T17:48:52+08:00
 draft: false
 author:
-  name:
+  name: 
   link:
   email:
   avatar:
@@ -14,9 +13,9 @@ license:
 comment: false
 weight: 0
 tags:
-  - draft
+  - 生物信息学
 categories:
-  - draft
+  - 生物信息学
 hiddenFromHomePage: false
 hiddenFromSearch: false
 summary:
@@ -33,10 +32,6 @@ message:
 repost:
   enable: true
   url:
-
-# See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---
-### 毕业小论文
-- [ ] 挑选材料进行商品种分析，基于重测序情况来写, 重测序，2K，mSNP 比较
-- [ ] 遗传选择用mSNP做一下
-- [ ] 改徐老师佳作
+# 1. [AllMaps 辅助组装准染色体水平基因组](https://www.jianshu.com/p/4dcc179e5990)
+[AllMaps github](https://github.com/tanghaibao/jcvi/wiki/ALLMAPS)

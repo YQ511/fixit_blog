@@ -1,8 +1,8 @@
 ---
-title: 记录
+title: NCBI上传原始数据
 subtitle:
-date: 2023-05-24T09:58:31+08:00
-draft: true
+date: 2023-05-24T22:12:49+08:00
+draft: false
 author:
   name:
   link:
@@ -14,9 +14,9 @@ license:
 comment: false
 weight: 0
 tags:
-  - draft
+  - 科研数据
 categories:
-  - draft
+  - 科研数据
 hiddenFromHomePage: false
 hiddenFromSearch: false
 summary:
@@ -28,7 +28,7 @@ resources:
 toc: true
 math: false
 lightgallery: false
-password: 
+password:
 message:
 repost:
   enable: true
@@ -36,6 +36,7 @@ repost:
 
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---
-[学习生信的方法和途径](https://www.zhihu.com/question/50904927?sort=created)
-1. 博客
-2. 
+[知乎：NCBI上传原始数据](https://zhuanlan.zhihu.com/p/149557150)  
+[知乎：NCBI数据库上传步骤](https://zhuanlan.zhihu.com/p/371729245)  
+[硕博之路](https://www.shuobolife.com)  
+[NCBI上传数据库-NCBI操作指南-基迪奥生物](https://zhuanlan.zhihu.com/p/188646783)

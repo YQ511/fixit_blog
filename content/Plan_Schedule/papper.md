@@ -1,7 +1,7 @@
 ---
-title: 记录文献：
+title: Papper
 subtitle:
-date: 2023-05-04T16:25:50+08:00
+date: 2023-05-27T08:50:52+08:00
 draft: false
 author:
   name:
@@ -14,9 +14,9 @@ license:
 comment: false
 weight: 0
 tags:
-  - draft
+  - 工作进度和安排
 categories:
-  - draft
+  - 工作进度和安排
 hiddenFromHomePage: false
 hiddenFromSearch: false
 summary:
@@ -28,14 +28,17 @@ resources:
 toc: true
 math: false
 lightgallery: false
-password:
-message:
+password: 
+message: 
 repost:
   enable: true
   url:
 
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---
-test  
-[水稻重测序RIL遗传连锁图谱](https://kns.cnki.net/KXReader/Detail?invoice=vfBE1dYwYjwry6nhO%2FC%2BaxgNCxNZNntNsEQ19G%2FmrdgBy6BPgv7iEUCDpPmef5H9fGlwEfreC4V3pgE%2Ff4sWQLlSEwDNTs1MhEy79zHawY4%2B55dBhO%2FUnxs2QD%2BEpe%2FE7O9wRG%2BjFFmCKcQdGkjoFOSbasnAHQ5AqWpzmdtrn0s%3D&DBCODE=CJFD&FileName=HNNB202102006&TABLEName=cjfdlast2021&nonce=C08CB9E997DB466EAB0C0309B24B0D81&TIMESTAMP=1684728061193&uid=)  
+### 毕业小论文
+- [ ] 挑选材料进行商品种分析，基于重测序情况来写, 重测序，2K，mSNP 比较
+- [ ] 指纹图谱用2K的描述一下
+- [ ] 遗传选择用mSNP做一下
+
 
