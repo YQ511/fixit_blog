@@ -8,7 +8,7 @@
 # See: https://fixit.lruihao.cn/documentation/basics/#menu-configuration
 # -------------------------------------------------------------------------------------
 
-title = "我的 Hugo FixIt 网站"
+title = ""
 baseURL = "http://example.org/"
 
 defaultContentLanguage = "zh-cn"
@@ -27,6 +27,9 @@ theme = "FixIt"
   [markup.highlight]
     # false 是必要的设置 (https://github.com/hugo-fixit/FixIt/issues/43)
     noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+    unsafe = true
 
 [menu]
   [[menu.main]]
@@ -161,9 +164,9 @@ theme = "FixIt"
     # FixIt 0.2.0 | NEW Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "/fixit.min.svg"
+      logo = ""
       # title name
-      name = "My Hugo FixIt Site"
+      name = "You write your own destiny "
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -861,3 +864,6 @@ theme = "FixIt"
   [module.hugoVersion]
     extended = true
     min = "0.109.0"
+# outputs markup menu params module
+  [godlmark.renderer]
+  unsafe = true
