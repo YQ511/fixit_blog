@@ -41,7 +41,7 @@ repost:
 题目：[Integrative multi-omics analysis reveals genetic and heterotic contributions to male fertility and yield in potato](https://www.nature.com/articles/s41467-024-53044-4)  
 文章单位：深圳基因组所  
 通讯作者：[张春芝](https://www.agis.org.cn/kydw/yjspy/dsjs/b1b3d4de0ac24849ae27c8d1f1693d14.htm)  
-公众号推文：[1](https://mp.weixin.qq.com/s?__biz=MzIyODUxNzA1NQ==&mid=2247593311&idx=1&sn=6df29ecc3ce368f139a139918641a308&chksm=e963a635a2e8127eab95ac8af22bd112fbaed4edfc5e270bbd57842dbdeeb2408b05baf68c0a&mpshare=1&scene=2&srcid=1006qYVlIrBbcOXiCVwmeKoP&sharer_shareinfo=1fe6edb7dab89975b761f18849ec0acf&sharer_shareinfo_first=8f1549baa1596877e224cdc1b88d5199#rd)
+公众号推文：[1](https://mp.weixin.qq.com/s?__biz=MzIyODUxNzA1NQ==&mid=2247593311&idx=1&sn=6df29ecc3ce368f139a139918641a308&chksm=e963a635a2e8127eab95ac8af22bd112fbaed4edfc5e270bbd57842dbdeeb2408b05baf68c0a&mpshare=1&scene=2&srcid=1006qYVlIrBbcOXiCVwmeKoP&sharer_shareinfo=1fe6edb7dab89975b761f18849ec0acf&sharer_shareinfo_first=8f1549baa1596877e224cdc1b88d5199#rd)、[2](https://mp.weixin.qq.com/s/Q3mmF7N9XEFQ4UpHGM29Gw)
 - [Abstract](#Abstract)
 - [Introduction](#Introduction)
 - [Result](#Result)
