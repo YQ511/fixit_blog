@@ -1,7 +1,7 @@
 ---
-title: Motif预测之meme
+title: Genefamily_summary
 subtitle:
-date: 2024-03-26T16:41:20+08:00
+date: 2024-10-09T11:41:40+08:00
 draft: false
 type: posts
 author:
@@ -37,6 +37,22 @@ repost:
 
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---
+
+[基因家族分析帖子](https://mp.weixin.qq.com/s/mQw3jXE3tj_Nkk-P-5yi8g)
+
+# 同源基因的鉴定
+## hmm+blast
+
+# 共线性分析
+## MCScanX
+## 
+
+## KA/KS
+### [知乎解读-Ka/Ks](https://zhuanlan.zhihu.com/p/144271268)
+- 遗传学中，Ka/Ks表示的是两个蛋白编码基因的非同义替换率（Ka）和同义替换率（Ks）之间的比例。这个比例可以判断是否有选择压力作用于这个蛋白质编码基因
+
+
+## Motif预测
 ### meme 参数解析：
 #-protein 待预测的为蛋白序列  
 #-oc result 输出路径  
