@@ -79,3 +79,5 @@ mast -oc 01Csa_meme -nostatus ./01Csa_meme/meme.xml Csa_bHLH_final.fa
 /public/software/env01/lib/libicui18n.so: undefined reference to `__cxa_throw_bad_array_new_length@CXXABI_1.3.8'
 /public/software/env01/lib/libicui18n.so: undefined reference to `operator delete(void*, unsigned long)@CXXABI_1.3.9'
 ```
+
+[test](/content/posts/R_Anova.md)
