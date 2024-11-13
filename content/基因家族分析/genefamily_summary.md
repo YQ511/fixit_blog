@@ -78,7 +78,7 @@ repost:
  [Interproscan|Pfam检索蛋白家族(pfam)](https://www.ebi.ac.uk/interpro/) 
    
 <div style="text-align: center;">
-    <img src="/基因家族hmm文件的下载.jpg" width="500" alt="hmm文件的下载">
+    <img src="/基因家族hmm文件的下载.jpg" width="1000" alt="hmm文件的下载">
 </div>
 
 #### 3.1.3 hmm之TBtools
@@ -88,6 +88,7 @@ repost:
 </div>
 
 #### 3.1.4 hmm之hmmsearch命令行
+1.  [参考贴](https://mp.weixin.qq.com/s?__biz=MzU2OTkyMTExMQ==&mid=2247486322&idx=1&sn=e4f4cacf32b0b10b2d36c266a471f79e&chksm=fcf6104acb81995c399a687ed919fb43e06fd01fe3c67404a729e72dc0b99bd4621d8df97574&scene=21#wechat_redirect)
 > - <font color='black'>一般寻找基因家族，都可以通过保守结构域来预测，从而找到物种的某一基因家族</font>
 > - <font color='black'>鉴定基因家族时，常用到的工具是hmmsearch，里面常用的算法有三种。一般我们使用--cut_tc算法对隐马可夫模型进行搜索，tc算法是使用pfam提供的hmm文件中**trusted cutoof**的值进行筛选，相对比较可靠</font>
 - hmm基因查询
@@ -102,7 +103,7 @@ hmmbuild ./${k}/${k}_bHLH.cyc${c}.hmm ./${k}/${k}_bHLH.cyc${c}.seed
 hmmsearch --noali --cpu 2 --domtblout ./${k}/${k}_bHLH.cyc${c}.tblout -o ./${k}/${k}_bHLH.cyc${c}.stout -E 0.01 --domE 0.01 ./${k}/${k}_bHLH.cyc${c}.hmm ../02_Blast/${k}_pep.fa
 ```
 #### 3.1.5 Blast
-
+[参考贴](https://mp.weixin.qq.com/s?__biz=MzU2OTkyMTExMQ==&mid=2247486359&idx=1&sn=6e6fa99982f378a632d20198cdbcf8a1&chksm=fcf610afcb8199b976852f282b9f86536ac0bd174e61a27a26e548a25190d71e4a16c4867dea&cur_album_id=3508258733375717382&scene=189#wechat_redirect)
 - 其他物种中基因家族的获取  
   >以拟南芥为例
     1. [从拟南芥官网进行基因家族文件的下载](https://www.arabidopsis.org/download/)
@@ -117,8 +118,47 @@ blastp -db pep.fa -query AT_bHLH.fa -out species.gf.blast -max_target_seqs 5 -ou
 ```
 - 输出文件的提取
 
-#### 3.1.6 对Hmm和Blast进行双重验证
+#### 3.1.6 对Hmm和Blast进行验证
+[参考贴](https://mp.weixin.qq.com/s?__biz=MzU2OTkyMTExMQ==&mid=2247486371&idx=1&sn=10385667ddbf4f1a3f3de6a79dadc749&chksm=fcf6109bcb81998d962590937899e9ad1f097406ad38117413a04658c411e03dd4e10fe25fa1&cur_album_id=3508258733375717382&scene=189#wechat_redirect)
 - 通过cat进行基因合并
+
+- 结构域鉴定
+```sh
+wget -c ftp://ftp.ebi.ac.uk:21/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
+wget -c  ftp://ftp.ebi.ac.uk:21/pub/databases/Pfam/current_release/Pfam-A.hmm.dat.gz
+wget -c ftp://ftp.ebi.ac.uk:21/pub/databases/Pfam/current_release/active_site.dat.gz
+gunzip *.gz
+hmmpress Pfam-A.hmm
+hmmscan -o scan.out --tblout scan.tbl --domtblout scan.dom --noali -E 1e-5 Pfam-A.hmm Cu.blast.hmm.wrky.fa
+#grep 'PF03106' scan.dom|awk '{print $4}'|sort|uniq > scan.idseqkit
+seqkit grep -n -f scan.idseqkit ChineseLong_pep_v3.fa > scan.pep.pfam.wrky.fa
+#python get_geneinfo_by_id.py --arg1 scan.idseqkit --arg2 ChineseLong_v3.gff3 --arg3 scan.pep.pfam.wrky.gene_info.out
+Rscript pep_characteristic.r scan.pep.pfam.wrky.fa
+```
+- 家族成员蛋白质特征的获取
+```R
+library(tidyverse)
+library(Biostrings)
+library(Peptides)
+library(ggfun)
+library(ggbeeswarm)
+library(patchwork)
+library(ggprism)
+library(writexl)
+####----load Data----####
+# sequence
+fa <- readAAStringSet("./pfam_scan.id.pep.fa")
+
+pep_df <- data.frame(fa) %>%
+  rownames_to_column("ID") %>% 
+  dplyr::mutate(Length = Peptides::lengthpep(seq = fa)) %>%  # lengthpep() 计算长度
+  dplyr::mutate(MW = mw(seq = fa)) %>%                 # mw() 计算分子量
+  dplyr::mutate(hydrophobicity = hydrophobicity(seq = fa)) %>%     # hydrophobicity() 计算疏水性
+  dplyr::mutate(pI = pI(seq = fa)) %>%                 # pI() 计算等电点
+  as_tibble() 
+write_xlsx(pep_df, path = "pfam_scan_info.xlsx")
+```
+
 #### 3.1.6 CDD数据库和SMART数据库的验证
 > [CDD数据库对蛋白文件进行验证](https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi)  
 
@@ -144,8 +184,13 @@ MCScanX ${i}_pep -e 1e-5
 
 
 ### 3.4 Motif预测分析
+[进化树_结构域_motif_基因结构](https://mp.weixin.qq.com/s?__biz=MzU2OTkyMTExMQ==&mid=2247486515&idx=1&sn=51deab09e8766bd0908f0dc4d9394d7e&chksm=fcf6170bcb819e1d0193e1efe95cba36d24b1e281ca4fa83757a382a73034f88d4d8aa7af8a3&scene=21#wechat_redirect)
+#### motif预测
 
-#### meme之命令行
+```sh
+meme test.fa -protein -oc test -nostatus -time 18000 -mod zoops -nmotifs 10 -minw 6 -maxw 50 -objfun classic -markov_order 0
+mast -oc 01Csa_meme -nostatus ./01Csa_meme/meme.xml Csa_bHLH_final.fa
+```
 - 参数解析：  
 #-protein 待预测的为蛋白序列  
 #-oc result 输出路径  
@@ -160,10 +205,6 @@ MCScanX ${i}_pep -e 1e-5
 #-maxw 13 motif最小长度  
 #-objfun classic motif检测的函数算法  
 #-markov_order 0 马尔科夫模型使用的顺序 
-```sh
-meme test.fa -protein -oc test -nostatus -time 18000 -mod zoops -nmotifs 10 -minw 6 -maxw 50 -objfun classic -markov_order 0
-mast -oc 01Csa_meme -nostatus ./01Csa_meme/meme.xml Csa_bHLH_final.fa
-```
 
 #### 安装报错
 ```
@@ -172,6 +213,11 @@ mast -oc 01Csa_meme -nostatus ./01Csa_meme/meme.xml Csa_bHLH_final.fa
 ```
 
 ### 3.5 进化树分析
+- 所需软件：muscle; iqtree
+```sh
+muscle -align ../../input/05_tree/scan.pep.pfam.wrky.fa -output ../../output/05_tree/pfam_scan.id.pep.muscle
+iqtree -s ../../output/05_tree/pfam_scan.id.pep.muscle -m MFP -bb 1000 -bnni  -nt AUTO  -cmax 15  -redo 
+```
 
 ### 3.6 基因家族的染色体分布图
 
