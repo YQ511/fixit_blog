@@ -115,6 +115,7 @@ compared with wild-type siblings (Figures 1E and 1F), with few  effects on other
 > presumably 大概，可能;   
 > rapid-amplification of cDNA ends (RACE)  
 > ribosome profiling sequencing ([Ribo-seq](https://zhuanlan.zhihu.com/p/685330554)) 核糖体印迹测序
+> putative adj.推定的，假定的  
 
 &emsp; To assess whether RPG functions by encoding micropeptides  rather than a lncRNA, we overexpressed the full-length RPG or a  mutant RPG with all 12 ATG start codons mutated to CTG (Figure S2E). Overexpression of wild-type RPG resulted in a slower  KDR (Figures S2A–S2D), whereas the non-translatable mutant  RPG did not alter the KDR (Figures S2E–S2H). These results  imply that RPG functions by encoding micropeptides rather  than as a lncRNA.
 
