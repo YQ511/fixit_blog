@@ -15,9 +15,9 @@ license:
 comment: false
 weight: 0
 tags:
-  - 转座子
+  - 转录调控
 categories:
-  - 转座子
+  - 转录调控
 hiddenFromHomePage: false
 hiddenFromSearch: false
 summary:
