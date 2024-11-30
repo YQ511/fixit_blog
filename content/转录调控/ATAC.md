@@ -37,5 +37,4 @@ repost:
 
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---
-
-<!--more-->
+[ATAC详解](https://zhuanlan.zhihu.com/p/512163334)
