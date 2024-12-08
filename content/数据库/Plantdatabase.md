@@ -50,3 +50,5 @@ repost:
 ### 不同类型的数据库
 
 - [dfam转座原件](https://www.dfam.org/home)
+- [Genomic tRNA database](http://gtrnadb.ucsc.edu/)
+- [NONCODE](http://noncode.org/)
