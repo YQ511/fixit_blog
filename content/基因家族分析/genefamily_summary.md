@@ -162,7 +162,7 @@ write_xlsx(pep_df, path = "pfam_scan_info.xlsx")
 #### 3.1.6 CDD数据库和SMART数据库的验证
 - domain预测：三种主流方法预测蛋白结构域
 1. [CDD数据库批量对蛋白文件进行验证](https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi)  
-2. [SMART数据库对蛋白文件的验证](https://smart.embl.de/), tbtools可以实现
+2. [SMART数据库对蛋白文件的验证](https://smart.embl.de/),
 3. [Interpro](https://www.ebi.ac.uk/interpro/)
 
 
