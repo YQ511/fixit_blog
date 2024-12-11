@@ -192,20 +192,21 @@ MCScanX ${i}_pep -e 1e-5
 meme test.fa -protein -oc test -nostatus -time 18000 -mod zoops -nmotifs 10 -minw 6 -maxw 50 -objfun classic -markov_order 0
 mast -oc 01Csa_meme -nostatus ./01Csa_meme/meme.xml Csa_bHLH_final.fa
 ```
-- 参数解析：  
-#-protein 待预测的为蛋白序列  
-#-oc result 输出路径  
-#-nostatus 不将软件计算过程输出到屏幕上  
-#-time 1800000 CPU消耗时间达到<time>后停止计算  
-#-mod zoops motif的分布类型  
-#· oops 每个功能域在每一段序列中都会出现一次，而且只出现一次。这种模式是运算速度最快，而且最为敏感的。但是如果并不是每个序列都包含功能域，那就可能会有不正确的结果。  
-#· zoops 每个功能域在每一段序列中至多只出现一次，可能不出现。这种模式运算速度较快，敏感性稍弱。  
-#· anr 每个功能域在每一段序列中出现的次数不定。这种模式运算速度最慢，可能会多花十倍以上的时间。但是对于功能分布的情况完全未知的情况下，这一参数可能会有帮助  
-#-nmotifs 3 检测到的motif的最大限制  
-#-minw 6 motif最大长度  
-#-maxw 13 motif最小长度  
-#-objfun classic motif检测的函数算法  
-#-markov_order 0 马尔科夫模型使用的顺序 
+- 参数解析：
+-mod zoops motif的分布类型  
+>oops 每个功能域在每一段序列中都会出现一次，而且只出现一次。这种模式是运算速度最快，而且最为敏感的。但是如果并不是每个序列都包含功能域，那就可能会有不正确的结果。  
+>zoops 每个功能域在每一段序列中至多只出现一次，可能不出现。这种模式运算速度较快，敏感性稍弱。  
+>anr 每个功能域在每一段序列中出现的次数不定。这种模式运算速度最慢，可能会多花十倍以上的时间。但是对于功能分布的情况完全未知的情况下，这一参数可能会有帮助 
+
+-protein 待预测的为蛋白序列  
+-oc result 输出路径  
+-nostatus 不将软件计算过程输出到屏幕上  
+-time 1800000 CPU消耗时间达到<time>后停止计算  
+-nmotifs 3 检测到的motif的最大限制  
+-minw 6 motif最大长度  
+-maxw 13 motif最小长度  
+-objfun classic motif检测的函数算法  
+-markov_order 0 马尔科夫模型使用的顺序 
 
 #### 安装报错
 ```
@@ -214,6 +215,9 @@ mast -oc 01Csa_meme -nostatus ./01Csa_meme/meme.xml Csa_bHLH_final.fa
 ```
 
 ### 3.5 进化树分析
+- 亚家族分类
+> [根据进化树进行亚家族分类](https://www.bilibili.com/video/BV1Zh4y1f7iC/)
+> [根据已有分类划分亚家族](https://www.bilibili.com/video/BV1eh4y1E7xc?vd_source=e0c7add78bf9595c8e4775e40c419406&spm_id_from=333.788.videopod.sections)
 - 所需软件：muscle; iqtree
 ```sh
 muscle -align ../../input/05_tree/scan.pep.pfam.wrky.fa -output ../../output/05_tree/pfam_scan.id.pep.muscle
